@@ -4,7 +4,7 @@ from sklearn import linear_model
 df = pandas.read_csv("data.csv")
 
 independent_values = df[['TUFE', 'USD', 'EUR', 'GBP', 'CHF', 'ALTIN']]
-dependent_values = df['TURKIYE']
+dependent_values = df[['ISTANBUL', 'IZMIR', 'ANKARA', 'TURKIYE']]
 
 regr = linear_model.LinearRegression()
 regr.fit(independent_values.values, dependent_values.values)
