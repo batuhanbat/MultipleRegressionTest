@@ -14,3 +14,6 @@ predictedCO2 = regr.predict([[2300, 1300]])
 
 print(predictedCO2)
 print(regr.coef_)
+
+# regr.predict([[3300, 1300]]) diye cagırınca [114.75968007] donuyor
+# 107.2087328 + (1000 * 0.00755095) = 114.75968
